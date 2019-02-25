@@ -4,7 +4,7 @@ How to implement Particle.js with Angular 7
 
 A lightweight JavaScript library for creating particles.
 
-https://github.com/Only1Ryu/Particles-JS/blob/master/Screenshot%20from%202019-02-25%2016-45-08.png
+![Test Image 4](https://github.com/Only1Ryu/Particles-JS/blob/master/Screenshot%20from%202019-02-25%2016-45-08.png)
 
 ## Create new Angular 7 Project or existing App
 

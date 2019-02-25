@@ -1,6 +1,6 @@
-# Particles
+# Particles.js
 
-How to implement Particle.js with Angular 7
+How to implement particles.js with Angular 7
 
 A lightweight JavaScript library for creating particles.
 

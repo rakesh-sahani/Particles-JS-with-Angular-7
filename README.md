@@ -1,150 +1,27 @@
-# Particles-JS
-How to implement Particle.js with Angular 7.
+# Particles
 
-A lightweight JavaScript library for creating particles.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
-Load particles.js and configure the particles:
+## Development server
 
-#create new Angular 7 project or Existing Project
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-#nstall particles.js
+## Code scaffolding
 
-npm install particles.js
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-#add Script particles.js path inside the angular.json
+## Build
 
-"scripts": ["node_modules/particles.js/particles.js"]
- 
-#app.component.html
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-<div id="particles-js"></div>
-<script src="particles.js"></script>
+## Running unit tests
 
-#app.component.ts
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-declare var particlesJS: any;
+## Running end-to-end tests
 
-ngOnInit(){
-    
-    particlesJS.load('particles-js', 'assets/particles.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
-  }
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Further help
 
-#create the file with name particles.json inside the give path directory /src/assets/particles.json
-
-{
-    "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#888fff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 10,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 300,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 2
-      },
-      "move": {
-        "enable": true,
-        "speed": 10,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 800,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 800,
-          "size": 80,
-          "duration": 2,
-          "opacity": 0.8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 400,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  }
-  
-  Refer this link for more animations and styles :---  https://vincentgarreau.com/particles.js/
-  
-  
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

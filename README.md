@@ -23,9 +23,11 @@ add `"scripts": ["node_modules/particles.js/particles.js"]` to adding the partic
 ### src/app/app.component.ts
 
 add this code inside this file
+```
+declare var particlesJS: any;
+```
 
-`declare var particlesJS: any;`
-`
+```
   ngOnInit(){
     
     particlesJS.load('particles-js', 'assets/particles.json', function() {
@@ -33,7 +35,7 @@ add this code inside this file
     });
     
   }
-`
+```
 
 ### src/app/app.component.html
  
@@ -43,7 +45,7 @@ add this code inside this file
 
 ### Create the json file with the name of particles.json in this path src/assets/particles.json
 
-`
+```
 {
     "particles": {
       "number": {
@@ -154,7 +156,7 @@ add this code inside this file
     },
     "retina_detect": true
   }
-`
+```
 
 ### Running for test
 
